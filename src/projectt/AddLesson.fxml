@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="330.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectt.AddLessonController">
+   <children>
+      <Label layoutX="265.0" layoutY="14.0" text="درس جدید" />
+      <TextField fx:id="title" layoutX="101.0" layoutY="68.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="183.0" promptText="نام درس" />
+      <TextField fx:id="profosser" layoutX="101.0" layoutY="109.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="183.0" promptText="نام استاد" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#save" style="-fx-background-color: white;" text="تایید">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="63.0" layoutY="361.0" mnemonicParsing="false" onAction="#cansel" style="-fx-background-color: white;" text="انصراف">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="blue" layoutX="249.0" layoutY="261.0" mnemonicParsing="false" onAction="#blue" prefHeight="34.0" prefWidth="32.0" style="-fx-background-color: #3f51b5; -fx-background-radius: 100px;" textFill="WHITE" />
+      <Button fx:id="red" layoutX="101.0" layoutY="206.0" mnemonicParsing="false" onAction="#red" prefHeight="34.0" prefWidth="32.0" style="-fx-background-color: #DD2c00; -fx-background-radius: 100px;" textFill="WHITE" />
+      <Button fx:id="gray" layoutX="149.0" layoutY="206.0" mnemonicParsing="false" onAction="#gray" prefHeight="34.0" prefWidth="32.0" style="-fx-background-color: #616161; -fx-background-radius: 100px;" textFill="WHITE" />
+      <Button fx:id="orange" layoutX="200.0" layoutY="206.0" mnemonicParsing="false" onAction="#orange" prefHeight="34.0" prefWidth="32.0" style="-fx-background-color: #f9a825; -fx-background-radius: 100px;" textFill="WHITE" />
+      <Button fx:id="purple" layoutX="249.0" layoutY="206.0" mnemonicParsing="false" onAction="#purple" prefHeight="34.0" prefWidth="32.0" style="-fx-background-color: purple; -fx-background-radius: 100px;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="brown" layoutX="200.0" layoutY="261.0" mnemonicParsing="false" onAction="#brown" prefHeight="34.0" prefWidth="32.0" style="-fx-background-color: #8c6e63; -fx-background-radius: 100px;" textFill="WHITE" />
+      <Button fx:id="green" layoutX="149.0" layoutY="261.0" mnemonicParsing="false" onAction="#green" prefHeight="34.0" prefWidth="32.0" style="-fx-background-color: #307b05; -fx-background-radius: 100px;" textFill="WHITE" />
+      <Button fx:id="red2" layoutX="101.0" layoutY="261.0" mnemonicParsing="false" onAction="#red2" prefHeight="34.0" prefWidth="32.0" style="-fx-background-color: #812321; -fx-background-radius: 100px;" textFill="WHITE" />
+      <TextField fx:id="VAHED" layoutX="101.0" layoutY="143.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="27.0" prefWidth="183.0" promptText="واحد" />
+   </children>
+</AnchorPane>

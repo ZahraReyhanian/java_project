@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="492.0" style="-fx-background-color: #364f6b;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectt.SetTimeViewController">
+   <children>
+      <HBox layoutX="85.0" layoutY="96.0" prefHeight="70.0" prefWidth="322.0">
+         <children>
+            <ComboBox fx:id="hour" prefHeight="70.0" prefWidth="106.0" promptText="hour" />
+            <Label prefHeight="73.0" prefWidth="4.0" text=":" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="minute" prefHeight="74.0" prefWidth="102.0" promptText="minute" />
+            <Label prefHeight="73.0" prefWidth="5.0" text=":" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="second" prefHeight="74.0" prefWidth="98.0" promptText="second" />
+         </children>
+      </HBox>
+      <Button layoutX="210.0" layoutY="216.0" mnemonicParsing="false" onAction="#OkButton" prefHeight="30.0" prefWidth="71.0" styleClass="header" stylesheets="@styles.css" text="تایید" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

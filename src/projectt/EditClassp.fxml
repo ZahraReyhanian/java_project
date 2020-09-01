@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="703.0" prefWidth="519.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectt.EditClasspController">
+   <children>
+      <Pane prefHeight="88.0" prefWidth="519.0" style="-fx-background-color: #3fc1c9;">
+         <children>
+            <Label layoutX="366.0" layoutY="31.0" prefHeight="27.0" prefWidth="83.0" text="کلاس جدید" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextArea fx:id="note" layoutX="123.0" layoutY="410.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="110.0" prefWidth="274.0" promptText="یادداشت" />
+      <Button layoutX="322.0" layoutY="552.0" mnemonicParsing="false" onAction="#addFile" style="-fx-background-color: #364F6B;" text=" فایل پیوست" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="55.0" layoutY="611.0" mnemonicParsing="false" onAction="#returnMenu" style="-fx-background-color: #fc5185;" text="بازگشت">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <CheckBox fx:id="sat" layoutX="399.0" layoutY="339.0" mnemonicParsing="false" text="ش">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="tue" layoutX="215.0" layoutY="339.0" mnemonicParsing="false" text="س">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="thu" layoutX="87.0" layoutY="339.0" mnemonicParsing="false" text="پ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="mon" layoutX="282.0" layoutY="339.0" mnemonicParsing="false" text="د">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="wed" layoutX="152.0" layoutY="339.0" mnemonicParsing="false" text="چ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="sun" layoutX="337.0" layoutY="339.0" mnemonicParsing="false" text="ی">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <TextField fx:id="subject" alignment="CENTER_RIGHT" layoutX="140.0" layoutY="118.0" prefHeight="26.0" prefWidth="239.0" promptText="عنوان" />
+      <Button layoutX="348.0" layoutY="611.0" mnemonicParsing="false" onAction="#updateClass" style="-fx-background-color: #3fc1c9;" text="ثبت">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="256.0" layoutY="268.0" text="الی">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="chooseLesson1" layoutX="141.0" layoutY="184.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="239.0" promptText="درس" />
+      <ComboBox fx:id="ftime_m" layoutX="387.0" layoutY="264.0" prefHeight="28.0" prefWidth="83.0" promptText="دقیقه" />
+      <ComboBox fx:id="ftime_h" layoutX="291.0" layoutY="264.0" prefHeight="28.0" prefWidth="83.0" promptText="ساعت" />
+      <ComboBox fx:id="ltime_m" layoutX="151.0" layoutY="264.0" prefHeight="28.0" prefWidth="83.0" promptText="دقیقه" />
+      <ComboBox fx:id="ltime_h" layoutX="48.0" layoutY="264.0" prefHeight="28.0" prefWidth="83.0" promptText="ساعت" />
+   </children>
+</AnchorPane>

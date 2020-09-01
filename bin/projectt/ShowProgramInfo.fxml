@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="backgroundd" prefHeight="666.0" prefWidth="492.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectt.ShowProgramInfoController">
+   <children>
+      <Label fx:id="lessonName" alignment="CENTER_RIGHT" layoutX="217.0" layoutY="107.0" prefHeight="25.0" prefWidth="221.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="60.0" prefWidth="492.0" style="-fx-background-color: #3fc1c9;">
+         <children>
+            <Label fx:id="TypeLesson" alignment="CENTER_RIGHT" layoutX="337.0" layoutY="20.0" prefHeight="21.0" prefWidth="102.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="439.0" layoutY="15.0" mnemonicParsing="false" onAction="#returnbutton" style="-fx-background-color: #3fc1c9;" text="&lt;-" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Label alignment="CENTER_RIGHT" layoutX="217.0" layoutY="249.0" prefHeight="25.0" prefWidth="221.0" text="روز های هفته" />
+      <Button layoutX="46.0" layoutY="102.0" mnemonicParsing="false" onAction="#editProgram" styleClass="header" stylesheets="@styles.css" text="edit" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="datee" alignment="CENTER_RIGHT" layoutX="217.0" layoutY="159.0" prefHeight="25.0" prefWidth="221.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sTime" alignment="CENTER_RIGHT" layoutX="370.0" layoutY="204.0" prefHeight="26.0" prefWidth="70.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sat" alignment="CENTER" layoutX="413.0" layoutY="300.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="ش">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="258.0" layoutY="141.0" prefHeight="3.0" prefWidth="181.0" style="-fx-background-color: white;" />
+      <Separator layoutX="92.0" layoutY="228.0" prefHeight="3.0" prefWidth="346.0" style="-fx-background-color: white;" />
+      <Separator layoutX="92.0" layoutY="273.0" prefHeight="3.0" prefWidth="346.0" style="-fx-background-color: white;" />
+      <Label fx:id="textt" alignment="CENTER_RIGHT" layoutX="92.0" layoutY="382.0" prefHeight="95.0" prefWidth="346.0" style="-fx-border-color: black;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="92.0" layoutY="331.0" prefHeight="3.0" prefWidth="346.0" style="-fx-background-color: white;" />
+      <Label alignment="CENTER_RIGHT" layoutX="336.0" layoutY="204.0" prefHeight="25.0" prefWidth="25.0" text="الی">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="fTime" alignment="CENTER_RIGHT" layoutX="234.0" layoutY="204.0" prefHeight="25.0" prefWidth="87.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="su" alignment="CENTER" layoutX="382.0" layoutY="300.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="ی">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="mo" alignment="CENTER" layoutX="348.0" layoutY="300.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="د">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="tu" alignment="CENTER" layoutX="315.0" layoutY="300.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="س">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="we" alignment="CENTER" layoutX="278.0" layoutY="300.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="چ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="th" alignment="CENTER" layoutX="245.0" layoutY="300.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="پ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="fr" alignment="CENTER" layoutX="205.0" layoutY="300.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white; -fx-background-radius: 100;" text="ج">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="217.0" layoutY="355.0" prefHeight="25.0" prefWidth="221.0" text="یادداشت" />
+      <Separator layoutX="92.0" layoutY="379.0" prefHeight="3.0" prefWidth="346.0" style="-fx-background-color: white;" />
+      <Pane fx:id="filePane" layoutX="92.0" layoutY="489.0" prefHeight="60.0" prefWidth="346.0" />
+   </children>
+</AnchorPane>

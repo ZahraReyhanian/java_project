@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="574.0" prefWidth="492.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectt.HW_showController">
+   <children>
+      <Pane prefHeight="111.0" prefWidth="494.0" style="-fx-background-color: #3fc1c9;">
+         <children>
+            <Button layoutX="34.0" layoutY="27.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: white;" text="search">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="390.0" layoutY="28.0" mnemonicParsing="false" onAction="#menu_botton" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #3fc1c9;" text="menu">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="371.0" layoutY="78.0" mnemonicParsing="false" onAction="#All_botton" prefHeight="30.0" prefWidth="123.25" style="-fx-background-color: #3fc1c9;" text="همه">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="78.0" mnemonicParsing="false" onAction="#hw_botton" prefHeight="30.0" prefWidth="123.25" style="-fx-background-color: #3fc1c9;" text="تکلیف">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="124.0" layoutY="78.0" mnemonicParsing="false" onAction="#exam_class" prefHeight="30.0" prefWidth="123.25" style="-fx-background-color: #3fc1c9;" text="امتحان">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="248.0" layoutY="78.0" mnemonicParsing="false" onAction="#class_botton" prefHeight="30.0" prefWidth="123.25" style="-fx-background-color: #3fc1c9;" text="کلاس">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="titleLabel" alignment="CENTER_RIGHT" layoutX="162.0" layoutY="28.0" prefHeight="29.0" prefWidth="220.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="109.0" prefHeight="2.0" prefWidth="123.0" style="-fx-background-color: white;" />
+         </children>
+      </Pane>
+      <Button layoutX="412.0" layoutY="504.0" mnemonicParsing="false" onAction="#Add" prefHeight="50.0" prefWidth="49.0" style="-fx-background-radius: 100%; -fx-background-color: #fc5185;" text="+" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
